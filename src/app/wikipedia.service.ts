@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
     providedIn: 'root',
 })
 export class WikipediaService {
-    constructor() {}
+    constructor(private wikipedia: WikipediaService) {}
 
-    search(term: string) {}
+    public search(term: string) {
+        const results = this.wikipedia.search(term);
+    }
 }
