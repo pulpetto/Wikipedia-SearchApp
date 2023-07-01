@@ -7,5 +7,5 @@ import { WikipediaService } from './wikipedia.service';
     styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-    onTerm(term: any) {}
+    onTerm(term: string) {}
 }
